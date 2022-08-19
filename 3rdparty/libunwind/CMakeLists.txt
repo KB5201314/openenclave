@@ -12,6 +12,7 @@ else()
   set(ARCH "aarch64")
   set(PLATFORM_SRC
     libunwind/src/aarch64/Lstep.c
+    libunwind/src/aarch64/Lis_signal_frame.c
   )
 endif()
 
