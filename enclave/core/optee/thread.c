@@ -484,3 +484,8 @@ void oe_thread_destruct_specific(void)
         oe_spin_unlock(&_lock);
     }
 }
+
+oe_thread_data_t* oe_get_thread_data()
+{
+    oe_abort();
+}
