@@ -1,6 +1,9 @@
 # Copyright (c) Open Enclave SDK contributors.
 # Licensed under the MIT License.
 
+# make OS/ABI field of generated elf file to SYS V
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fno-gnu-unique")
+
 include(FetchContent)
 FetchContent_Declare(
   libcxx_sources
